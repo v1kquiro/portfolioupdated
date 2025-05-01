@@ -2,44 +2,35 @@ body, html {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  height: 100%;
   z-index: 5;
-}
-
-.container{
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  z-index: 50;
-}
-
-.slides{
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  color: #fff;
   background: linear-gradient(454deg, #4f4080, #9553);
-  scroll-snap-align: start;
-  z-index: 50;
-
 }
 
-.slides img{
-  width: 350px;
-    z-index: 50;
-
+section {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  min-height: 25vh;
 }
 
-.slides h2{
-  font-size: 70px;
-  font-weight: 600;
-  max-width: 650;
-}
+  .hidden {
+    opacity: 0;
+    transition: all 5s;
+  }
+  
+  .show {
+    opacity: 1;
+  }
 
+  .h2 {
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    z-index: 1;
+    position: center;
+  }
 
 
 #matrix {
@@ -155,16 +146,6 @@ body {
   background-color: rgb(var(--background-rgb));
   margin: 0rem;
   overflow: hidden;
-}
-
-.h2 {
-  color: white;
-  background-color: transparent;
-  text-align: center;
-  justify-content: center;
-  margin: 0;
-  z-index: 45;
-  position: center;
 }
 
 
